@@ -1,6 +1,6 @@
 # LIFF
 
-## Welcome to LIFF (Lion Fil Festival)
+## Welcome to LIFF (Lion Film Festival)
 
 Follow trough the instruction below to start the app on the development environment
 
