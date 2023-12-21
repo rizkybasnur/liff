@@ -9,7 +9,7 @@
                 <img src="@/assets/logo.png" alt="logo" width="35" />
               </v-list-item-title>
             </div>
-            <v-list-item v-if="isAdmin" to="/">
+            <v-list-item v-if="isAdmin" to="/create">
               <v-list-item-title>Create</v-list-item-title>
             </v-list-item>
 
@@ -21,7 +21,7 @@
               <v-list-item-title>Statistic</v-list-item-title>
             </v-list-item>
 
-            <v-list-item v-if="!isAdmin" to="/movies">
+            <v-list-item v-if="!isAdmin" to="/">
               <v-list-item-title>Movies</v-list-item-title>
             </v-list-item>
 
@@ -80,7 +80,9 @@ export default {
       this.isSnackbar = true;
       this.snackbarText = "You Just Logged Out";
       setTimeout(() => {
-        this.$router.push("/movies");
+        if (this.$route.fullPath !== "/") {
+          this.$router.push("/");
+        }
       }, 1000);
     },
   },

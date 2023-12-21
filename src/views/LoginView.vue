@@ -25,6 +25,7 @@
               :rules="[(value) => !!value || '*wajib diisi.']"
               label="Password"
               placeholder="Password"
+              type="password"
               @keydown.enter="onSubmit"
             >
             </v-text-field>
@@ -70,7 +71,8 @@ export default {
           this.isSnackbar = true;
           this.snackbarText = response.data.message;
           setTimeout(() => {
-            this.$router.push("/");
+            if (response.data.isAdmin) this.$router.push("/create");
+            if (!response.data.isAdmin) this.$router.push("/");
           }, 1000);
         })
         .catch((error) => {

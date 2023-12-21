@@ -1,5 +1,3 @@
-# LIFF
-
 ## Welcome to LIFF (Lion Film Festival)
 
 Follow trough the instruction below to start the app on the development environment
@@ -21,6 +19,15 @@ npm run serve
 ```
 node server.js
 ```
+
+### If you want to try the Login Feature, please refer to the account and password below
+
+ADMIN
+Username: admin
+Password: admin
+USER
+Username: user
+Password: password
 
 ### Compiles and minifies for production
 

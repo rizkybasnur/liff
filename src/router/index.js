@@ -5,10 +5,9 @@ import Movies from "@/views/MoviesView.vue";
 import Search from "@/views/SearchView.vue";
 import Views from "@/views/ViewsView.vue";
 import Login from "@/views/LoginView.vue";
-
 const routes = [
   {
-    path: "/",
+    path: "/create",
     component: Create,
     name: "create",
   },
@@ -23,7 +22,7 @@ const routes = [
     name: "statistic",
   },
   {
-    path: "/movies",
+    path: "/",
     component: Movies,
     name: "movies",
   },
