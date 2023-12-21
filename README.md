@@ -1,4 +1,4 @@
-# liff
+# LIFF
 
 ## Welcome to LIFF (Lion Fil Festival)
 
