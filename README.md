@@ -22,10 +22,13 @@ node server.js
 
 ## If you want to try the Login Feature, please refer to the account and password below
 
-ADMIN  
+### ADMIN
+
 Username: admin  
-Password: admin  
-USER  
+Password: admin
+
+### USER
+
 Username: user  
 Password: password
 
